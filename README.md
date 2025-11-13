@@ -17,7 +17,9 @@
 ### 식
 
 ## GPT는 토큰 단위로 다음 확률을 예측함
-P(yt​∣y<t​,x)
+
+ <img width="275" height="75" alt="image" src="https://github.com/user-attachments/assets/99753869-98bb-45d6-b647-775e50060157" />
+
 
 -- y<t : 지금까지 생성된 토큰들
 
@@ -25,20 +27,24 @@ P(yt​∣y<t​,x)
 
 ## Gready Search 선택 규칙
 
- yt​=argmax​P(w∣y<t​,x)
+ <img width="402" height="61" alt="image" src="https://github.com/user-attachments/assets/e8219ae8-d203-416e-9cd9-08049d002112" />
+
 
 --각 스텝에서 확률이 가장 높은 단어 w를 선택한다.
 
 ## 전체 문장 확률을 생성하는 식 
 
 1.문장을 T토큰까지 생성한다고 할떄 
-  Y^={y^​1​,y^​2​,…,y^​T​}
+  <img width="221" height="40" alt="image" src="https://github.com/user-attachments/assets/13e88540-d7d3-4e16-b1ec-5560c424ad07" />
+
 
 2.각 토큰은 
-  y^​t​=argmax​P(w∣y^​<t​,x)
+  <img width="264" height="40" alt="image" src="https://github.com/user-attachments/assets/ef24f264-2be2-44ac-b47f-502fd8307189" />
+
 
 3.전체 문장은 
-  Y^=argw1​max​P(w1​)⋅argw2​max​P(w2​∣w1​)⋅argw3​max​P(w3​∣w1​,w2​)⋅…
+  <img width="703" height="70" alt="image" src="https://github.com/user-attachments/assets/3626baaf-d905-48b5-9d62-90f46aa9319a" />
+
 
 ---
 
