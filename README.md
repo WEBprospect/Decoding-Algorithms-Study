@@ -35,15 +35,18 @@
 ## 전체 문장 확률을 생성하는 식 
 
 1.문장을 T토큰까지 생성한다고 할떄 
-  <img width="221" height="40" alt="image" src="https://github.com/user-attachments/assets/13e88540-d7d3-4e16-b1ec-5560c424ad07" />
+
+<img width="221" height="40" alt="image" src="https://github.com/user-attachments/assets/13e88540-d7d3-4e16-b1ec-5560c424ad07" />
 
 
 2.각 토큰은 
-  <img width="264" height="40" alt="image" src="https://github.com/user-attachments/assets/ef24f264-2be2-44ac-b47f-502fd8307189" />
+
+<img width="264" height="40" alt="image" src="https://github.com/user-attachments/assets/ef24f264-2be2-44ac-b47f-502fd8307189" />
 
 
 3.전체 문장은 
-  <img width="703" height="70" alt="image" src="https://github.com/user-attachments/assets/3626baaf-d905-48b5-9d62-90f46aa9319a" />
+
+<img width="703" height="70" alt="image" src="https://github.com/user-attachments/assets/3626baaf-d905-48b5-9d62-90f46aa9319a" />
 
 
 ---
