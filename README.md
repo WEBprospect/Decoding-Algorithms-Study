@@ -132,7 +132,7 @@ print(tokenizer.decode(output_greedy[0]))
 다음 단계로 진행한다. 이렇게 함으로써 그리디 서치의 단점인 "초기 선택 실수"를 완화하고 더 전역적으로 좋은 문장을 찾을 가능성이 높다.
 
 
---log 사용 이유 : 확률을 곱하다 보면 아주 작은 수가 되니깐 곱대신 log를 취해 더하기 형태로 계산
+log 사용 이유 : 확률을 곱하다 보면 아주 작은 수가 되니깐 곱대신 log를 취해 더하기 형태로 계산
 ---
 
 ### GPT의 다음 토큰 확률
@@ -144,13 +144,16 @@ print(tokenizer.decode(output_greedy[0]))
 ### Beam Search 선택 규칙 
 
 -각 후보 시퀀스의 점수를 다음과 같이 누적한다.
+
 <img width="382" height="90" alt="image" src="https://github.com/user-attachments/assets/f3b88b6d-b410-4985-a058-f743f236a7e4" />
 
 -다음 스텝에서 확장되는 후보 생성 :
  각 빔 후보에 대해 모든 단어 w를 붙여 확장
+ 
  <img width="251" height="76" alt="image" src="https://github.com/user-attachments/assets/e6fdec9a-b068-46e8-9397-8bb696a9d53f" />
 
  -이 중에서 상위 b개의 후보만 선택
+ 
  <img width="395" height="70" alt="image" src="https://github.com/user-attachments/assets/82fb9736-420b-466d-ad57-d8c821f4d785" />
 
  즉, 모든 후보를 확장한 뒤 , 전체 중 상위 b개의 누적 로그 확률이 높은 시퀀스를 빔으로 유지한다.
